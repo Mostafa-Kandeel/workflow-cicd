@@ -2,6 +2,15 @@
 on:
   workflow_dispatch:
     branches: [ "main" ]
+    inputs:
+      example_input:
+        description: "An example input"
+        required: true
+        default: "develop"
+        choices:
+          - develop
+          - staging
+          - production
 
 jobs:
   build_new_app:
