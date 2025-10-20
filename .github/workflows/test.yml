@@ -7,6 +7,7 @@ on:
         description: "An example input"
         required: true
         default: "develop"
+        type: choice
         choices:
           - develop
           - staging
