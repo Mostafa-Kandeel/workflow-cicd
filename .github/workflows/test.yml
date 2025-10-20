@@ -25,4 +25,4 @@ jobs:
   Second_step:
     steps:
       - name: print second step
-        runs: echo "This is the second step in ${{ inputs.environment }} environment"
+        run: echo "This is the second step in ${{ inputs.environment }} environment"
