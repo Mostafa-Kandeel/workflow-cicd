@@ -1,6 +1,6 @@
 
 on:
-  push:
+  workflow_dispatch:
     branches: [ "main" ]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3 
-         
+
       - name: print hello
         run: echo "hello world"
     
