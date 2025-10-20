@@ -3,12 +3,12 @@ on:
   workflow_dispatch:
     branches: [ "main" ]
     inputs:
-      example_input:
-        description: "An example input"
+      environment:
+        description: "Deployment environment"
         required: true
         default: "develop"
         type: choice
-        choices:
+        options:
           - develop
           - staging
           - production
