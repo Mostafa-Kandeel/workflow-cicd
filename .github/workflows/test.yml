@@ -23,6 +23,7 @@ jobs:
       - name: print hello
         run: echo "hello world in ${{ inputs.environment }} environment"
   Second_step:
+    runs-on: ubuntu-latest
     steps:
       - name: print second step
         run: echo "This is the second step in ${{ inputs.environment }} environment"
