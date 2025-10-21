@@ -4,8 +4,7 @@ on:
 jobs:
     output_setup:
       runs-on: ubuntu-latest
-      output:
-            user: ${{set_output.who}}
+      output: ${{set_output.who}}
       steps:
         - name : print setup
           id: set_output
