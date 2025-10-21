@@ -15,6 +15,6 @@ jobs:
 
         - name: print output
           run: |
-            echo "user is ${{outputs.user}}"
+            echo "user is ${{steps.set_output.outputs.user}}"
             
             
