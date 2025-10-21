@@ -1,0 +1,20 @@
+on:
+    push:
+      branches: [ "main" ]
+jobs:
+    output_setup:
+      runs-on: ubuntu-latest
+      output:
+            user: ${{set_output.who}}
+      steps:
+        - name : print setup
+          id: set_output
+          run: |
+            echo "who = whoami" >> $GITHUB_OUTPUT
+            echo "where = pwd" >> $GITHUB_OUTPUT
+
+        - name: print output
+          run: |
+            echo "user is ${{outputs.user}}"
+            
+            
