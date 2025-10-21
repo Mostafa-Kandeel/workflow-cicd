@@ -1,0 +1,14 @@
+{
+  "name": "ci-pipeline-project",
+  "version": "1.0.0",
+  "description": "A simple CI pipeline project",
+  "main": "src/pipeline.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
